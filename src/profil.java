@@ -68,9 +68,6 @@ public class Profile extends AppCompatActivity {
         }
     };
 
-    public Profile() {
-    }
-
     public void read() {
         vornameTextView = (TextView) findViewById(R.id.vornameTextView);
         nachnameTextView = (TextView) findViewById(R.id.nachnameTextView);
@@ -111,19 +108,7 @@ public class Profile extends AppCompatActivity {
             return null;
         });
 
-//
-//        documentSnapshotTask.onSuccessTask(user -> {
-//
-//            DocumentSnapshot document = task.getResult();
-//            String vorname = document.getString("firstname");
-//            String nachname = document.getString("lastname");
-//            String geb = document.getString("born");
-//            vornameTextView.setText(vorname);
-//            nachnameTextView.setText(nachname);
-//            gebTextView.setText(geb);
-//
-//            return null;
-//        });
+
     }
     //Methode um neuen Farmshop zu erstellen
     public void createNewFarmshop(View view){
@@ -242,9 +227,5 @@ public class Profile extends AppCompatActivity {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void editProfile() {
-
     }
 }
