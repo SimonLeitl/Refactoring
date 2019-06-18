@@ -35,7 +35,6 @@ public class FarmerProfile extends AppCompatActivity {
     private FirebaseFirestore mDatabase;
     private List<String> group = new ArrayList<String>();
     private List<String> shops = new ArrayList<String>();
-   // private List<String> shopsAndNames = new ArrayList<String>();
     private static final String FARMERID = "com.example.linkn.myapplication";
     private TextView farmerVorname, farmerNachname;
     private ListView farmerShops;
@@ -43,19 +42,10 @@ public class FarmerProfile extends AppCompatActivity {
     private Farmshop farmShop = new Farmshop();
     private String farmshopID;
     private AdapterView.OnItemClickListener listClickItemNameListener;
-    private Farmer owner;
-    private String shopname;
-    private double[] gps;
-    public FirebaseAuth auth;
-    private DocumentReference Farmshop;
     private float bewertung = 0;
     private float anzahl = 0;
-    Map<String, Object> userEingabe = new HashMap<>();
-    Map<String, Object> farmshopId=new HashMap<>();
     
     CheckBox montagcheckBox,dienstagcheckBox,mittwochcheckBox,donnerstagcheckBox,freitagcheckBox, samstagcheckBox, sonntagcheckBox, geöffnetCeckBox;
-    private RadioGroup radioGroup;
-    private RadioButton radioButton;
     private TextView  shopnameTextView, FarmerTextView, opentimeTextView, ratingTextView, shopArtTextView;
     TextView adressTextView,phoneTextView;
 
