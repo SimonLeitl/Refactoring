@@ -52,10 +52,7 @@ public class FarmerProfile extends AppCompatActivity {
     private float anzahl = 0;
     Map<String, Object> userEingabe = new HashMap<>();
     Map<String, Object> farmshopId=new HashMap<>();
-
-    EditText shopnameTextbox,inhaberTextBox,StraßeTextBox,hausnummerTextBox,plzTextBox, ortTextBox2,phoneTextBox, emailTextBox,
-            moAnfangTextBox, moEndeTextBox,diAnfangTextBox, diEndeTextBox,miAnfangTextBox, miEndeTextBox,doAnfangTextBox,
-            doEndeTextBox,frAnfangTextBox, frEndeTextBox,saAnfangTextBox, saEndeTextBox,soAnfangTextBox, soEndeTextBox;
+    
     CheckBox montagcheckBox,dienstagcheckBox,mittwochcheckBox,donnerstagcheckBox,freitagcheckBox, samstagcheckBox, sonntagcheckBox, geöffnetCeckBox;
     private RadioGroup radioGroup;
     private RadioButton radioButton;
