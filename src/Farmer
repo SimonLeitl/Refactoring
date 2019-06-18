@@ -47,10 +47,10 @@ public class Farmer extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
 
-        emailTextbox = (EditText) findViewById(R.id.inhaberTextBox);
-        passwortTextBox = (EditText) findViewById(R.id.plzTextBox);
-        registrieren=(Button) findViewById(R.id.weiterButton);
-        nameTextBox=(EditText) findViewById(R.id.nameTextBox);
+        emailTextbox = findViewById(R.id.inhaberTextBox);
+        passwortTextBox = findViewById(R.id.plzTextBox);
+        registrieren= findViewById(R.id.weiterButton);
+        nameTextBox= findViewById(R.id.nameTextBox);
 
         vornameTextBox=(EditText) findViewById(R.id.vornameTextBox);
         geburtstagTextBox=(EditText) findViewById(R.id.geburtstagTextBox);
