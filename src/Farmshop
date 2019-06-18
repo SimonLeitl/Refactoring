@@ -276,31 +276,6 @@ public void showFarmShop(View view){
 }
 
 
-
-    public Farmer getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Farmer owner) {
-        this.owner = owner;
-    }
-
-    public String getShopname() {
-        return shopname;
-    }
-
-    public void setShopname(String shopname) {
-        this.shopname = shopname;
-    }
-
-    public double[] getGps() {
-        return gps;
-    }
-
-    public void setGps(double[] gps) {
-        this.gps = gps;
-    }
-
     public void saveFavoriteFarmshop(String id,String uid,FirebaseAuth auth) {
         this.id = id;
 
