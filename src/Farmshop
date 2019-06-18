@@ -33,12 +33,9 @@ public class Farmshop extends AppCompatActivity {
     public FirebaseAuth auth;
     private FirebaseFirestore mDatabase;
     private DocumentReference Farmshop;
-    private float bewertung = 0;
-    private float anzahl = 0;
     private String anzahlFavoriten,id;
     private String uid;
     Map<String, Object> userEingabe = new HashMap<>();
-    //Map<String, Object> öffnungszeiten=new HashMap<>();
     Map<String, Object> farmshopId=new HashMap<>();
     private ArrayList<String> favoriteFarmshopList=new ArrayList<String>();
     private Map<String, Object> favoriteFarmshop = new HashMap<>();
@@ -49,7 +46,6 @@ public class Farmshop extends AppCompatActivity {
     CheckBox montagcheckBox,dienstagcheckBox,mittwochcheckBox,donnerstagcheckBox,freitagcheckBox, samstagcheckBox, sonntagcheckBox, geöffnetCeckBox;
     private RadioGroup radioGroup;
     private RadioButton radioButton;
-    private TextView  shopnameTextView, FarmerTextView, opentimeTextView, ratingTextView, shopArtTextView;
     public List<String> farmshopIds=new ArrayList<>();
     TextView adressTextView,phoneTextView;
     // Farmshopdaten als enum speichern? Name, Adresse, Öffnungszeiten...
@@ -58,7 +54,6 @@ public class Farmshop extends AppCompatActivity {
     this.owner=owner;
     this.shopname=shopname;
     this.gps=gps;
-
 }
 
     @Override
