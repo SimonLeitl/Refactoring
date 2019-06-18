@@ -185,10 +185,9 @@ public class Profile extends AppCompatActivity {
         }
     }
 
-    public Profile(String name, int id, double[] gps) {
+    public Profile(String name, int id) {
         this.name = name;
         this.id = id;
-
 
     }
 
