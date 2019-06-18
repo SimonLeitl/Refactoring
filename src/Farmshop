@@ -64,21 +64,21 @@ public class Farmshop extends AppCompatActivity {
 
     }
 public void durchgängigGeöffnet(View view){
-    moAnfangTextBox = (EditText) findViewById(R.id.moAnfangTextBox);
-    moEndeTextBox = (EditText) findViewById(R.id.moEndeTextBox);
-    diAnfangTextBox = (EditText) findViewById(R.id.diAnfangTextBox);
-    diEndeTextBox = (EditText) findViewById(R.id.diEndeTextBox);
-    miAnfangTextBox = (EditText) findViewById(R.id.miAnfangTextBox);
-    miEndeTextBox = (EditText) findViewById(R.id.miEndeTextBox);
-    doAnfangTextBox = (EditText) findViewById(R.id.doAnfangTextBox);
-    doEndeTextBox = (EditText) findViewById(R.id.doEndeTextBox);
-    frAnfangTextBox = (EditText) findViewById(R.id.frAnfangTextBox);
-    frEndeTextBox = (EditText) findViewById(R.id.frEndeTextBox);
-    saAnfangTextBox = (EditText) findViewById(R.id.saAnfangTextBox);
-    saEndeTextBox = (EditText) findViewById(R.id.saEndeTextBox);
-    soAnfangTextBox = (EditText) findViewById(R.id.soAnfangTextBox);
-    soEndeTextBox = (EditText) findViewById(R.id.soEndeTextBox);
-    geöffnetCeckBox=(CheckBox) findViewById(R.id.geöffnetCheckBox);
+    moAnfangTextBox = findViewById(R.id.moAnfangTextBox);
+    moEndeTextBox = findViewById(R.id.moEndeTextBox);
+    diAnfangTextBox = findViewById(R.id.diAnfangTextBox);
+    diEndeTextBox = findViewById(R.id.diEndeTextBox);
+    miAnfangTextBox = findViewById(R.id.miAnfangTextBox);
+    miEndeTextBox = findViewById(R.id.miEndeTextBox);
+    doAnfangTextBox = findViewById(R.id.doAnfangTextBox);
+    doEndeTextBox = findViewById(R.id.doEndeTextBox);
+    frAnfangTextBox = findViewById(R.id.frAnfangTextBox);
+    frEndeTextBox = findViewById(R.id.frEndeTextBox);
+    saAnfangTextBox = findViewById(R.id.saAnfangTextBox);
+    saEndeTextBox = findViewById(R.id.saEndeTextBox);
+    soAnfangTextBox = findViewById(R.id.soAnfangTextBox);
+    soEndeTextBox = findViewById(R.id.soEndeTextBox);
+    geöffnetCeckBox= findViewById(R.id.geöffnetCheckBox);
 
 
     if(geöffnetCeckBox.isChecked()){
@@ -121,14 +121,14 @@ public void createFarmshop1(View view){
     //gibt den String des aktuellen Users
     String uid = user.getUid();
 
-    shopnameTextbox = (EditText) findViewById(R.id.shopnameTextBox);
-    inhaberTextBox = (EditText) findViewById(R.id.inhaberTextBox);
-    StraßeTextBox = (EditText) findViewById(R.id.StraßeTextBox);
-    hausnummerTextBox = (EditText) findViewById(R.id.hausnummerTextBox);
-    plzTextBox = (EditText) findViewById(R.id.plzTextBox);
-    ortTextBox2 = (EditText) findViewById(R.id.ortTextBox2);
-    phoneTextBox = (EditText) findViewById(R.id.phoneTextBox);
-    emailTextBox = (EditText) findViewById(R.id.emailTextBox);
+    shopnameTextbox = findViewById(R.id.shopnameTextBox);
+    inhaberTextBox = findViewById(R.id.inhaberTextBox);
+    StraßeTextBox = findViewById(R.id.StraßeTextBox);
+    hausnummerTextBox = findViewById(R.id.hausnummerTextBox);
+    plzTextBox = findViewById(R.id.plzTextBox);
+    ortTextBox2 = findViewById(R.id.ortTextBox2);
+    phoneTextBox = findViewById(R.id.phoneTextBox);
+    emailTextBox = findViewById(R.id.emailTextBox);
 
     userEingabe.put("shopname",shopnameTextbox.getText().toString());
     userEingabe.put("inhabername", inhaberTextBox.getText().toString());
@@ -151,30 +151,30 @@ public void createFarmshop2(View view){
     //gibt den String des aktuellen Users
     String uid = user.getUid();
 
-    moAnfangTextBox = (EditText) findViewById(R.id.moAnfangTextBox);
-    moEndeTextBox = (EditText) findViewById(R.id.moEndeTextBox);
-    diAnfangTextBox = (EditText) findViewById(R.id.diAnfangTextBox);
-    diEndeTextBox = (EditText) findViewById(R.id.diEndeTextBox);
-    miAnfangTextBox = (EditText) findViewById(R.id.miAnfangTextBox);
-    miEndeTextBox = (EditText) findViewById(R.id.miEndeTextBox);
-    doAnfangTextBox = (EditText) findViewById(R.id.doAnfangTextBox);
-    doEndeTextBox = (EditText) findViewById(R.id.doEndeTextBox);
-    frAnfangTextBox = (EditText) findViewById(R.id.frAnfangTextBox);
-    frEndeTextBox = (EditText) findViewById(R.id.frEndeTextBox);
-    saAnfangTextBox = (EditText) findViewById(R.id.saAnfangTextBox);
-    saEndeTextBox = (EditText) findViewById(R.id.saEndeTextBox);
-    soAnfangTextBox = (EditText) findViewById(R.id.soAnfangTextBox);
-    soEndeTextBox = (EditText) findViewById(R.id.soEndeTextBox);
+    moAnfangTextBox = findViewById(R.id.moAnfangTextBox);
+    moEndeTextBox = findViewById(R.id.moEndeTextBox);
+    diAnfangTextBox = findViewById(R.id.diAnfangTextBox);
+    diEndeTextBox = findViewById(R.id.diEndeTextBox);
+    miAnfangTextBox = findViewById(R.id.miAnfangTextBox);
+    miEndeTextBox = findViewById(R.id.miEndeTextBox);
+    doAnfangTextBox = findViewById(R.id.doAnfangTextBox);
+    doEndeTextBox = findViewById(R.id.doEndeTextBox);
+    frAnfangTextBox = findViewById(R.id.frAnfangTextBox);
+    frEndeTextBox = findViewById(R.id.frEndeTextBox);
+    saAnfangTextBox = findViewById(R.id.saAnfangTextBox);
+    saEndeTextBox = findViewById(R.id.saEndeTextBox);
+    soAnfangTextBox = findViewById(R.id.soAnfangTextBox);
+    soEndeTextBox = findViewById(R.id.soEndeTextBox);
 
 
-    montagcheckBox = (CheckBox) findViewById(R.id.montagcheckBox);
-    dienstagcheckBox = (CheckBox) findViewById(R.id.dienstagcheckBox);
-    mittwochcheckBox= (CheckBox) findViewById(R.id.mittwochcheckBox);
-    donnerstagcheckBox = (CheckBox) findViewById(R.id.donnerstagcheckBox);
-    freitagcheckBox = (CheckBox) findViewById(R.id.freitagcheckBox);
-    samstagcheckBox = (CheckBox) findViewById(R.id.samstagcheckBox);
-    sonntagcheckBox=(CheckBox)findViewById(R.id.sonntagcheckBox);
-    radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+    montagcheckBox = findViewById(R.id.montagcheckBox);
+    dienstagcheckBox = findViewById(R.id.dienstagcheckBox);
+    mittwochcheckBox= findViewById(R.id.mittwochcheckBox);
+    donnerstagcheckBox = findViewById(R.id.donnerstagcheckBox);
+    freitagcheckBox = findViewById(R.id.freitagcheckBox);
+    samstagcheckBox = findViewById(R.id.samstagcheckBox);
+    sonntagcheckBox= findViewById(R.id.sonntagcheckBox);
+    radioGroup = findViewById(R.id.radioGroup);
 
 
     int selectedId = radioGroup.getCheckedRadioButtonId();
