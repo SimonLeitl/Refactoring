@@ -142,13 +142,13 @@ public class FarmerProfile extends AppCompatActivity {
 
     public void showFarmshopbyId( String id){
         setContentView(R.layout.farm_shop_profile);
-        adressTextView = (TextView) findViewById(R.id.adressTextView);
-        phoneTextView = (TextView) findViewById(R.id.phoneTextView);
-        shopnameTextView = (TextView) findViewById(R.id.shopnameTextView);
-        ratingTextView = (TextView) findViewById(R.id.ratingTextView);
-        FarmerTextView=(TextView) findViewById(R.id.FarmerTextView);
-        opentimeTextView=(TextView) findViewById(R.id.opentimeTextView);
-        shopArtTextView=(TextView) findViewById(R.id.shopartTextView);
+        adressTextView = findViewById(R.id.adressTextView);
+        phoneTextView = findViewById(R.id.phoneTextView);
+        shopnameTextView = findViewById(R.id.shopnameTextView);
+        ratingTextView = findViewById(R.id.ratingTextView);
+        FarmerTextView= findViewById(R.id.FarmerTextView);
+        opentimeTextView= findViewById(R.id.opentimeTextView);
+        shopArtTextView= findViewById(R.id.shopartTextView);
         DocumentReference Farmshop = mDatabase.collection("Farmshop").document(id);
 
         Farmshop.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
